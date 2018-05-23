@@ -1,130 +1,200 @@
-#slider{ /*положение слайдера*/
-    position: relative;
-    text-align: center;
-    top: 10px;
+body{
+    background: #e3e3e3;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
 }
-#slider{ /*центровка слайдера*/
-    margin: 0 auto;
-}
-#slider article{ /*изображения справа друг от друга*/
-    width: 20%;
-    float: left;  
-}
-
-#slider .image{/*устанавливает общий размер блока с изображениями*/
-    width: 500%;
-    line-height: 0;
-}
-#overflow{/*скрывает все что находиться за пределами блока*/
-    width: 100%;
-    overflow:hidden;
-}
-article img{/*размер изображений слайдера*/
-    width: 100%;
-}
-#desktop:checked ~ #slider{/*размер всего слайдера */
-    max-width: 960px;/*максимальная длина*/
-}
-/*настройка переключения и положения для левой стрелки*/
-/*если свич1-5 активны то идет обращение к лейблу из блока с id контролс*/
-#switch1:cheked ~ #controls label:nth-child(5),
-#switch2:cheked ~ #controls label:nth-child(1),
-#switch3:cheked ~ #controls label:nth-child(2),
-#switch4:cheked ~ #controls label:nth-child(3),
-#switch5:cheked ~ #controls label:nth-child(4){
-    background: url('img/prev.png') no-repeat;/*заливка фона картинкой без повторений*/
-    float: left;
-    margin: 0 0 0 -84px;/*сдвиг влево*/
-    display: block;
-    height: 68px;
-    width: 68px;
+/*                    *МЕНЮ                       */
+/*                    *МЕНЮ                       */
+/*                    *МЕНЮ                       */
+/*                    *МЕНЮ                       */
+/*                    *МЕНЮ                       */
+/*                    *МЕНЮ                       */
+/*                    *МЕНЮ                       */
+/*                    *МЕНЮ                       */
+.nav{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background: #2d2c2c;
 }    
-
-/*настройка переключения и положения для правой стрелки*/
-/*если свич1-5 активны то идет обращение к лейблу из блока с id контролс*/
-#switch1:cheked ~ #controls label:nth-child(2),
-#switch2:cheked ~ #controls label:nth-child(3),
-#switch3:cheked ~ #controls label:nth-child(4),
-#switch4:cheked ~ #controls label:nth-child(5),
-#switch5:cheked ~ #controls label:nth-child(1){
-    background: url('img/next.jpg') no-repeat;/*заливка фона картинкой без повторений*/
-    float: right;
-    margin: 0 -84px 0 0;/*сдвиг вправо*/
-    display: block;
-    height: 68px;
-    width: 68px;
-}    
-
-label, a{/*при наведении на стрелки или переключатели курсор изменится*/
-    cursor: pointer;
+.navigation{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  background: #2d2c2c;
+  
 }
 
-.all input{/*скрывает стандартные инпуты(чекбоксы) на странице*/
-    display:none;
-}
-
-#switch1:cheked ~ #slides .image{
-    margin-left: 0;
-}
-
-#switch2:cheked ~ #slides .image{
-    margin-left: 100%;
-}
-
-#switch3:cheked ~ #slides .image{
-    margin-left: 200%;
-}
-
-#switch4:cheked ~ #slides .image{
-    margin-left: 300%;
-}
-
-#switch5:cheked ~ #slides .image{
-    margin-left: 400%;
-}
-
-#controls{/*положение блока всех управляющих элементов*/
-    margin: -25% 0 0 0;
+.navigation.before{
+    content:"";
+    display:block;
+    height: 60px;
     width: 100%;
-    height: 50px;
+    position: absolute;
+    left:0;
+    z-index: -1;
 }
 
-#active label{/*стиль отдельного переклбчателя */
-    border-radius: 10px;/*скругление углов*/
-    display: inline-block;/*расположение в строку*/
-    width: 15px;
-    height: 15px;
-    background: #bbb;
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    height: 60px;
+}
+.navigation ul li{
+     float:left;
+     max-width: 20%;
+     text-align: center;
 }
 
-#active{/*расположение блока с переключателями*/
-    margin: 23%;
-    text-align: center;
+.navigation ul li a{
+    color: #fff;
+    padding:0 50px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    height: 60px;
+    display: block;
+    text-transform: uppercase;
+    line-height: 60px;
+  
+}
+.navigation ul li a:hover{
+    background: #FF8000;
 }
 
-#active label:hover{/*поведение чекбокса при наведении */
-    background: #76c8ff;
-    border-color: #777 !important;/*выполнение в любом случае*/
-}
 
-/*цвет активного лейбла при активации чекбокса*/
-#switch1:checked ~ #active label:nth-child(1),
-#switch2:checked ~ #active label:nth-child(2),
-#switch3:checked ~ #active label:nth-child(3),
-#switch4:checked ~ #active label:nth-child(4),
-#switch5:checked ~ #active label:nth-child(5){
-    background: #18a3dd;
-    border-color: #18a3dd !important;
-}
+   .header {
+        background-image: url("../img/bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+       
+        height: 100vh;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-#slides .image{/*анимация пролистывания изображений*/
-    transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
-}
+    }
+    .header__title{
+        font-size: 72px;
+        text-shadow: 
+		-0   -2px 1px rgba( 43, 37, 37, 0.73 ),
+		 0   -2px 1px rgba( 43, 37, 37, 0.73 ),
+		-0    2px 1px rgba( 43, 37, 37, 0.73 ),
+		 0    2px 1px rgba( 43, 37, 37, 0.73 ),
+		-2px -0   1px rgba( 43, 37, 37, 0.73 ),
+		 2px -0   1px rgba( 43, 37, 37, 0.73 ),
+		-2px  0   1px rgba( 43, 37, 37, 0.73 ),
+		 2px  0   1px rgba( 43, 37, 37, 0.73 ),
+		-1px -2px 1px rgba( 43, 37, 37, 0.73 ),
+		 1px -2px 1px rgba( 43, 37, 37, 0.73 ),
+		-1px  2px 1px rgba( 43, 37, 37, 0.73 ),
+		 1px  2px 1px rgba( 43, 37, 37, 0.73 ),
+		-2px -1px 1px rgba( 43, 37, 37, 0.73 ),
+		 2px -1px 1px rgba( 43, 37, 37, 0.73 ),
+		-2px  1px 1px rgba( 43, 37, 37, 0.73 ),
+		 2px  1px 1px rgba( 43, 37, 37, 0.73 ),
+		-2px -2px 1px rgba( 43, 37, 37, 0.73 ),
+		 2px -2px 1px rgba( 43, 37, 37, 0.73 ),
+		-2px  2px 1px rgba( 43, 37, 37, 0.73 ),
+		 2px  2px 1px rgba( 43, 37, 37, 0.73 ),
+		-2px -2px 1px rgba( 43, 37, 37, 0.73 ),
+		 2px -2px 1px rgba( 43, 37, 37, 0.73 ),
+		-2px  2px 1px rgba( 43, 37, 37, 0.73 );
+        margin-bottom: 30px;
+        margin-top: 120px;
+    }
+   
+    .header__slogan{
+        font-size: 28px;
+        line-height: 42px;
+        text-shadow: 
+		-0   -2px 1px rgba( 43, 37, 37, 0.73 ),
+		 0   -2px 1px rgba( 43, 37, 37, 0.73 ),
+		-0    2px 1px rgba( 43, 37, 37, 0.73 ),
+		 0    2px 1px rgba( 43, 37, 37, 0.73 ),
+		-2px -0   1px rgba( 43, 37, 37, 0.73 ),
+		 2px -0   1px rgba( 43, 37, 37, 0.73 ),
+		-2px  0   1px rgba( 43, 37, 37, 0.73 ),
+		 2px  0   1px rgba( 43, 37, 37, 0.73 ),
+		-1px -2px 1px rgba( 43, 37, 37, 0.73 ),
+		 1px -2px 1px rgba( 43, 37, 37, 0.73 ),
+		-1px  2px 1px rgba( 43, 37, 37, 0.73 ),
+		 1px  2px 1px rgba( 43, 37, 37, 0.73 ),
+		-2px -1px 1px rgba( 43, 37, 37, 0.73 ),
+		 2px -1px 1px rgba( 43, 37, 37, 0.73 ),
+		-2px  1px 1px rgba( 43, 37, 37, 0.73 ),
+		 2px  1px 1px rgba( 43, 37, 37, 0.73 ),
+		-2px -2px 1px rgba( 43, 37, 37, 0.73 ),
+		 2px -2px 1px rgba( 43, 37, 37, 0.73 ),
+		-2px  2px 1px rgba( 43, 37, 37, 0.73 ),
+		 2px  2px 1px rgba( 43, 37, 37, 0.73 ),
+		-2px -2px 1px rgba( 43, 37, 37, 0.73 ),
+		 2px -2px 1px rgba( 43, 37, 37, 0.73 ),
+		-2px  2px 1px rgba( 43, 37, 37, 0.73 );
+    }
+    .header__arrow{
+        font-size: 48px;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        width: 60px;
+        height: 50px;
+        margin-left: -30px;
+    }
 
-#controls label:hover{ /*прозрачность стрелок при на ведении*/
-    opacity: 0.6;
-}
+  
+    .opis{
+        width: 100%;
+        height: 100%;
 
-#controls label{/*прозрачность стрелок при отводке курсора*/
-    transition: opacity 0.2s ease-out;
-}
+        background: #2d2c2c;
+        
+    }
+    .title{
+        text-align:center;
+        color: white;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    } 
+        
+   
+
+    .grid {
+        width: 100%;
+        max-width: 1640px;
+        min-width: 460px;
+        height: 50vh;
+        margin: 50px auto;
+        padding: 0 30px;
+        
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+
+    .grid-item {
+       background-image: url("../img/bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+       
+        height: 100%;
+        min-height: 35vh;
+        font-size: 40px;
+        color: white;
+        margin: 0 10px 20px;
+        flex: 1 1 calc(50% - 20px);
+      
+        display: flex;
+        justify-content: center;
+
+        align-items: center;
+
+    }
