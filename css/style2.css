@@ -4,17 +4,12 @@ body{
     padding: 0;
     font-family: 'Oswald', sans-serif;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 5f1607f13f089832c34b1133d6581900b1615789
 *{
     padding: 0;
     margin: 0;
 }
 li{
     list-style: none;
-<<<<<<< HEAD
 }
 a{
     text-decoration: none;
@@ -57,207 +52,6 @@ nav{
 
 } 
 
-=======
-}
-a{
-    text-decoration: none;
-}
-
-header{
-    background: #2d2c2c;
-    
-
-}
-.header-container{
-    
-    height: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-.header-container a{
-    color: black;
-    font-size:16px;
-    padding: 27px 6px;
-    color:white;
-    margin-right: 63px;
-}
-.header-container a:hover{
-    background: #FF8000;
-}
-#menu-checkbox{
-    display: none;
-}
-ul{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-}
-nav{
-  margin-top: 42px;
-
-} 
-
-@media  screen and ( max-width: 768px) {
-    .header-container{
-        width: 100%;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        justify-content: space-around;
-    }
-    .main-menu{
-        display: none;
-    }
-    .main-menu li{
-        width: 100%;
-        display: block;
-        font-size: 12px;
-    }
-    .main-menu a{
-        display: block;
-        padding: 8px;
-    }
-    .toggle-button{
-        text-align: center;
-        display: block;
-        cursor: pointer;
-        color: white;
-    }
-    .toggle-button:after{
-        content: attr(data-open);
-        display: block;
-    }
-    #menu-checkbox:checked + nav[role="navigation"] .main-menu{
-        display: block;
-    }
-    #menu-checkbox:checked + nav[role="navigation"] .toggle-button:after{
-        content: attr(data-close);
-    }
-    .header-container a{
-        margin-right: -65px;
-    }
-    .main-menu{
-        position: relative;
-        right: 8px;
-        padding-top: 10px;
-    }
-} 
-/*.navigation{
-=======
-/*                    *МЕНЮ                       */
-/*                    *МЕНЮ                       */
-/*                    *МЕНЮ                       */
-/*                    *МЕНЮ                       */
-/*                    *МЕНЮ                       */
-/*                    *МЕНЮ                       */
-/*                    *МЕНЮ                       */
-/*                    *МЕНЮ                       */
-.nav{
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  background: #2d2c2c;
-}    
-.navigation{
->>>>>>> 446c4db9ab5436dc0053f5cff567c452b2774488
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0;
-  background: #2d2c2c;
-  
-}
-
-.navigation.before{
-    content:"";
-    display:block;
-    height: 60px;
-    width: 100%;
-    position: absolute;
-    left:0;
-    z-index: -1;
-}
-<<<<<<< HEAD
-
-ul{
-    margin:0;
-    padding:0;
-    list-style: none;
-    height: 60px;
-}
-.navigation ul li{
-     float:left;
-     max-width: 20%;
-     text-align: center;
-}
-
-.navigation ul li a{
-    color: #fff;
-    padding:0 50px;
-    font-family: 'Oswald', sans-serif;
-    text-decoration: none;
-    height: 60px;
-    display: block;
-
-    text-transform: uppercase;
-    line-height: 60px;
-  
-}
-.navigation ul li a:hover{
-    background: #FF8000;
-}
-
-*/
-   .header {
-        background-image: url("../img/bg.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-       
-        height: 100vh;
-        width: 100%;
-        color: #fff;
-        text-align: center;
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    
-
-=======
-
-ul{
-    margin:0;
-    padding:0;
-    list-style: none;
-    height: 60px;
-}
-.navigation ul li{
-     float:left;
-     max-width: 20%;
-     text-align: center;
-}
-
-.navigation ul li a{
-    color: #fff;
-    padding:0 50px;
-    font-family: 'Oswald', sans-serif;
-    text-decoration: none;
-    height: 60px;
-    display: block;
-    text-transform: uppercase;
-    line-height: 60px;
-  
-}
-.navigation ul li a:hover{
-    background: #FF8000;
-}
->>>>>>> 5f1607f13f089832c34b1133d6581900b1615789
 
 
    .header {
@@ -275,13 +69,8 @@ ul{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-<<<<<<< HEAD
     
 
-=======
-
->>>>>>> 446c4db9ab5436dc0053f5cff567c452b2774488
->>>>>>> 5f1607f13f089832c34b1133d6581900b1615789
     }
     .header__title{
         font-size: 72px;
@@ -343,23 +132,14 @@ ul{
     }
     .header__arrow{
         font-size: 48px;
-<<<<<<< HEAD
        
-=======
-        position: absolute;
->>>>>>> 5f1607f13f089832c34b1133d6581900b1615789
         bottom: 50px;
         left: 50%;
         width: 60px;
         height: 50px;
         margin-left: -30px;
-<<<<<<< HEAD
         margin-top: 10px;
     }
-=======
-    }
-<<<<<<< HEAD
->>>>>>> 5f1607f13f089832c34b1133d6581900b1615789
     .block{
     height: 100vh;
    
@@ -369,35 +149,14 @@ ul{
         width: 100%;
         
         
-<<<<<<< HEAD
-=======
-=======
-
-  
-    .opis{
-        width: 100%;
-        height: 100%;
-
->>>>>>> 446c4db9ab5436dc0053f5cff567c452b2774488
->>>>>>> 5f1607f13f089832c34b1133d6581900b1615789
         background: #2d2c2c;
         
     }
     .title{
         text-align:center;
         color: white;
-<<<<<<< HEAD
         padding-top: 30px;
         padding-bottom: 30px;
-=======
-<<<<<<< HEAD
-        padding-top: 30px;
-        padding-bottom: 30px;
-=======
-        padding-top: 100px;
-        padding-bottom: 100px;
->>>>>>> 446c4db9ab5436dc0053f5cff567c452b2774488
->>>>>>> 5f1607f13f089832c34b1133d6581900b1615789
     } 
         
    
@@ -405,17 +164,8 @@ ul{
     .grid {
         width: 100%;
         max-width: 1640px;
-<<<<<<< HEAD
        
         
-=======
-        min-width: 460px;
-<<<<<<< HEAD
-        
-=======
-        height: 50vh;
->>>>>>> 446c4db9ab5436dc0053f5cff567c452b2774488
->>>>>>> 5f1607f13f089832c34b1133d6581900b1615789
         margin: 50px auto;
         padding: 0 30px;
         
@@ -429,11 +179,7 @@ ul{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-<<<<<<< HEAD
         width: 100%;
-=======
-       
->>>>>>> 5f1607f13f089832c34b1133d6581900b1615789
         height: 100%;
         min-height: 35vh;
         font-size: 40px;
@@ -446,7 +192,6 @@ ul{
 
         align-items: center;
 
-<<<<<<< HEAD
     }
 
 
@@ -502,6 +247,3 @@ ul{
         flex: 1 1 calc(100% - 20px);
       
 } 
-=======
-    }
->>>>>>> 5f1607f13f089832c34b1133d6581900b1615789
