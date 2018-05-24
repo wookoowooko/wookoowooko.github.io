@@ -196,8 +196,36 @@ nav{
 
 
 
+.grid-item a {
+     display: block; /* Ссылка как блочный элемент */
+     
+    }
 
-    @media  screen and ( max-width: 768px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media  screen and ( max-width: 430px) {
     .header-container{
         width: 100%;
         display: -webkit-flex;
