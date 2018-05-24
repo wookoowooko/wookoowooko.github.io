@@ -4,6 +4,7 @@ body{
     padding: 0;
     font-family: 'Oswald', sans-serif;
 }
+<<<<<<< HEAD
 *{
     padding: 0;
     margin: 0;
@@ -100,6 +101,23 @@ nav{
     }
 } 
 /*.navigation{
+=======
+/*                    *МЕНЮ                       */
+/*                    *МЕНЮ                       */
+/*                    *МЕНЮ                       */
+/*                    *МЕНЮ                       */
+/*                    *МЕНЮ                       */
+/*                    *МЕНЮ                       */
+/*                    *МЕНЮ                       */
+/*                    *МЕНЮ                       */
+.nav{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background: #2d2c2c;
+}    
+.navigation{
+>>>>>>> 446c4db9ab5436dc0053f5cff567c452b2774488
   max-width: 960px;
   margin: 0 auto;
   padding: 0;
@@ -116,6 +134,7 @@ nav{
     left:0;
     z-index: -1;
 }
+<<<<<<< HEAD
 
 ul{
     margin:0;
@@ -163,6 +182,53 @@ ul{
         justify-content: center;
     
 
+=======
+
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+    height: 60px;
+}
+.navigation ul li{
+     float:left;
+     max-width: 20%;
+     text-align: center;
+}
+
+.navigation ul li a{
+    color: #fff;
+    padding:0 50px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    height: 60px;
+    display: block;
+    text-transform: uppercase;
+    line-height: 60px;
+  
+}
+.navigation ul li a:hover{
+    background: #FF8000;
+}
+
+
+   .header {
+        background-image: url("../img/bg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+       
+        height: 100vh;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+>>>>>>> 446c4db9ab5436dc0053f5cff567c452b2774488
     }
     .header__title{
         font-size: 72px;
@@ -231,6 +297,7 @@ ul{
         height: 50px;
         margin-left: -30px;
     }
+<<<<<<< HEAD
     .block{
     height: 100vh;
    
@@ -240,14 +307,27 @@ ul{
         width: 100%;
         
         
+=======
+
+  
+    .opis{
+        width: 100%;
+        height: 100%;
+
+>>>>>>> 446c4db9ab5436dc0053f5cff567c452b2774488
         background: #2d2c2c;
         
     }
     .title{
         text-align:center;
         color: white;
+<<<<<<< HEAD
         padding-top: 30px;
         padding-bottom: 30px;
+=======
+        padding-top: 100px;
+        padding-bottom: 100px;
+>>>>>>> 446c4db9ab5436dc0053f5cff567c452b2774488
     } 
         
    
@@ -256,7 +336,11 @@ ul{
         width: 100%;
         max-width: 1640px;
         min-width: 460px;
+<<<<<<< HEAD
         
+=======
+        height: 50vh;
+>>>>>>> 446c4db9ab5436dc0053f5cff567c452b2774488
         margin: 50px auto;
         padding: 0 30px;
         
