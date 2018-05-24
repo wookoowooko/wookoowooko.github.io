@@ -1,9 +1,11 @@
 html {
-    background-color: #000000;
+    background-color: #18a3dd;
   
 }
+
 body {
    margin: 0;
+   padding: 0;
    
 }
 
@@ -19,7 +21,8 @@ body {
 
 .header {
     width: 100%;
-    background: #ddd;
+    background: #000000;
+    
 }
 
 
@@ -35,6 +38,7 @@ body {
 .navigation{
   width: 960px;
   margin: 0 auto;
+  padding: 0;
 }
 
 .navigation.before{
@@ -42,7 +46,6 @@ body {
     display:block;
     height: 50px;
     width: 100%;
-    background: #76c8ff;
     position: absolute;
     left:0;
     z-index: -1;
@@ -69,7 +72,7 @@ ul{
   
 }
 .navigation ul li a:hover{
-    background: #b2b8c3;
+    background: #FF8000;
 }
 
 
@@ -80,11 +83,14 @@ ul{
 .molly{
     background-image: url('../bg.jpg');
     background-repeat: no-repeat;
-    width: 100%;
+
     height: 800px;
     display: block;
-    margin: 0 auto;
-    padding: 0;
+    
+    padding: 50px auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -95,6 +101,7 @@ ul{
 /*                             GRID                         */
 /*                             GRID                         */
 /*                             GRID                         */
+
 
 
 .container{
@@ -102,19 +109,20 @@ ul{
     margin-left: auto;
     margin-right: auto;
     
+   
 }
 .row{
-    margin:0auto;
+    margin:0 auto;
 }
 
 .row:after{
     clear:both;
     content: "";
-    display: table;
+    display: inline-block;
 }
 .col {
     width: 360px;
-    margin-right: 30px;
+    margin:0 30px;
     float: left;
     
 }
@@ -134,13 +142,6 @@ ul{
 
 
 
-section {
-    width: 1500px; margin:0 auto;
-}
-
-center {
-    width: 100%; background: #fff;margin:10px 0 50px 0;
-}
 
 
 #social a{
@@ -150,43 +151,61 @@ center {
     display: block;
 }
 
-page{
+.mywork{
 display: block;
 width: calc(100%-60px);
 text-align: center;
 color:#fff;
 height: 50px; 
-
 padding: 20px 30px ;
-margin-top: 50px;
+margin: 0 auto;
 }
 
-foto{
-    display: table-cell;
-    vertical-align: middle;
+/*                         галерея                                */
+/*                         галерея                                */
+/*                         галерея                                */
+/*                         галерея                                */
+/*                         галерея                                */
+/*                         галерея                                */
+
+.container1{
+   background: #fff;
+    max-width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
+    margin:0 auto;;
+    
+   
+}   
+
+.foto{
+   box-sizing: border-box;
+    width: calc(50% - 4px);
+    height: 600px;
+    margin: 2px;
     text-align  : center;
-    color       : white;
+    background: url('../bg.jpg') no-repeat;
+    background-size: cover;
     font	: bold 24px/45px Helvetica, Sans-Serif;
-    
 }
-news {
-      position:         relative;
-      display:          block;
-      overflow:         hidden;
-      width:            100%;
-      background:       #eee;}
-news div {
-      width: calc(50% - 10px);
-      margin: 5px;
-      height: 400px;
-      float: left;}
-news div foto {
-    
-      display: block; 
-      width: 100%;
-      height: 100%;
-      background-size:cover;
-      background-repeat: no-repeat;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -335,6 +354,12 @@ label, a{ /*при наведении на стрелки или переклю�
 #controls label{ /*прозрачность стрелок при отводе курсора*/
 	transition: opacity 0.2s ease-out;
 }
+
+
+
+
+
+
 
 
 .footer {
