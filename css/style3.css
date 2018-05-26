@@ -118,7 +118,7 @@ body{
 }
 .gallery{
 	background-color: #fffddd;
-	height: 100vh;
+	height: 100%;
 	min-height: 600px;
 	padding: 2rem;
 }
@@ -128,4 +128,98 @@ body{
 .table-header h2{
 	font-size: 50px;
 	margin: 0;
+}
+.works{
+	margin: 30px auto;
+	width: 80%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	border: 1px solid red;
+}
+.work1{
+	margin: 0px;
+	background: url('../img/flower.png') no-repeat center;
+	background-size: cover;
+	width: 50%;
+	min-height: 600px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	border: 1px solid blue;
+	text-align: center;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	flex-direction: column;
+}
+.work2{
+	margin: 0px;
+	background: url('../img/people.png') no-repeat center;
+	background-size: cover;
+	width: 50%;
+	min-height: 600px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	border: 1px solid blue;
+	text-align: center;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.work3{
+	margin: 0px;
+	background: url('../img/city.png') no-repeat center;
+	background-size: cover;
+	width: 50%;
+	min-height: 600px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	border: 1px solid blue;
+	text-align: center;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.work4{
+	margin: 0px;
+	background: url('../img/spider.png') no-repeat center;
+	background-size: cover;
+	width: 50%;
+	min-height: 600px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	border: 1px solid blue;
+	text-align: center;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	flex-direction: column;
+}
+.work-btn{
+	border: 1px solid red;
+	border-radius: 10px;
+	font-size: 1.5rem;
+	padding: 1rem 2rem;
+
 }
