@@ -10,7 +10,8 @@ img{
 	transition-timing-function: linear;
 }	
 body{
-	font-family: 'Arsenal', sans-serif;
+	font-family: 'Bad Script', cursive;
+	font-family: 'Pacifico', cursive;
 	margin: 0;
 }
 a{
@@ -33,10 +34,14 @@ h1, h2, h3, h4, h5, h6, p{
 	justify-content: space-between;
 	align-items: center;
 	min-height: 600px;
-	background: url('../img/bg.jpg') no-repeat center;
+	background: url('../img/beg.jpg') no-repeat center;
 	background-size: cover;
 	position: relative;
 	background-attachment: fixed;
+}
+.main-text p{
+	margin-top: 50px;
+
 }
 .main-overlay{
 	position: absolute;
@@ -63,7 +68,7 @@ h1, h2, h3, h4, h5, h6, p{
 	align-items: center;
 	width: 100%;
 	z-index: 2;
-	background: #392742;
+	background-color: #392742;
 	position: fixed;
 }
 
@@ -158,7 +163,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 .footer{
 	background-color: #e9e8e6;
-	min-height: 800px;
+	min-height: 1200px;
 	
 	width: 90%;
 	/*border: 1px solid red;*/
@@ -215,6 +220,13 @@ h1, h2, h3, h4, h5, h6, p{
 .footer-contain:nth-child(4) {
 	margin-top: 0px;
 }
+.footer-contain:nth-child(5) {
+	margin-top: 0px;
+
+}
+.footer-contain:nth-child(6) {
+	margin-top: 0px;
+}
 
 .copy{
 	display: -webkit-flex;
@@ -254,7 +266,7 @@ h1, h2, h3, h4, h5, h6, p{
 section{
 	background-color: #392742;
 	margin: 0 auto;
-	max-width: 1140px;
+	width: 100%;
 	color: white;
 }
 .footer2{
@@ -288,8 +300,44 @@ section{
 }
 
 
+.aboutme{
+	border:1px solid black;
+	width: 90%;
+	margin: 0 auto;
+	padding: 0;		
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	-ms-align-items: 	center;
+		align-items: 	center;		
+}
+.col{
+	height: 100vh;
+	border:1px solid grey;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.main-col{
+	width: 60%;
+	padding: 100px;
 
-
+}
+.second-col{
+	padding: 10px;
+	width: 40%;
+	background-size: cover;
+	background-repeat: repeat;
+	min-height: 100px;
+	height: 100%;
+}
 
 
 @media screen and (max-width: 768px){
@@ -304,7 +352,17 @@ section{
 	.footer2-container{
 		width: 100%;
 	}
-}/*
+}
+.footer2-container a{
+	color: white;
+	text-decoration: none;
+	background-color: #ffffas;
+}	
+button{
+	background-color:black;
+	border-radius: 20px;
+}
+/*
 @media screen and (max-width: 300px){
 	.card{
 	flex: 1 1 100%; 
