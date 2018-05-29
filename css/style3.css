@@ -221,10 +221,11 @@ h1, h2, h3, h4, h5, h6, p{
 	align-items: center;
 	text-align: center;
 	justify-content: center;
-	padding: 30px;
+	padding: 50px;
 	/*border: 1px solid blue;*/
-	color: white;
-	background: #392742; 
+	color: #392742;
+	background: white; 
+	font-size: 24pt;
 }	
 .footer-contain{
 	margin: 10px;
@@ -303,6 +304,7 @@ section{
 	margin: 0 auto;
 	width: 100%;
 	color: white;
+
 }
 .footer2{
 	margin: 0 auto;
@@ -315,6 +317,7 @@ section{
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	min-height: 100px;
 }
 .footer2-container{
 	/*border: 1px solid green;*/
