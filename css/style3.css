@@ -16,15 +16,7 @@ body{
 a{
 	text-decoration: none;
 }
-h1{
-	padding: 0;
-	margin: 0;	
-}
-h3{
-	padding: 0;
-	margin: 0;	
-}
-h2{
+h1, h2, h3, h4, h5, h6, p{
 	padding: 0;
 	margin: 0;	
 }
@@ -150,7 +142,6 @@ h2{
 .cont{
 	/*border: 1px solid black;*/
 
-	margin: 100px auto; 
 	padding: 0;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -161,14 +152,11 @@ h2{
 	justify-content: center;
 	align-items: center;
 }
-footer{
-}
-
 
 .footer{
 	background-color: #e9e8e6;
 	min-height: 800px;
-	margin: 100px auto;
+	
 	width: 90%;
 	/*border: 1px solid red;*/
 	display: -webkit-flex;
@@ -178,7 +166,6 @@ footer{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	height: 100%;
 
 }
 .copy2{
@@ -277,6 +264,7 @@ section{
 	display: -o-flex;
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 .footer2-container{
 	/*border: 1px solid green;*/
@@ -290,6 +278,7 @@ section{
 	-ms-align-items: center;
 	align-items: center;
 	justify-content: center;
+
 }
 .footersocialitem a{
 	color: white;
@@ -303,12 +292,14 @@ section{
 @media screen and (max-width: 768px){
 	.footer-contain{
 	flex: 1 1 100%; 
-	min-height: 150px;
+	min-height: 50px;
 	margin : 0;
 	}
 	.card:last-child{
 		margin-bottom: 0px;
-
+	}
+	.footer2-container{
+		width: 100%;
 	}
 }/*
 @media screen and (max-width: 300px){
