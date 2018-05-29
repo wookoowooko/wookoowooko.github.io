@@ -10,7 +10,7 @@ img{
 	transition-timing-function: linear;
 }	
 body{
-	font-family: 'Anton', sans-serif;
+	font-family: 'Arsenal', sans-serif;
 	margin: 0;
 }
 a{
@@ -21,6 +21,8 @@ h1, h2, h3, h4, h5, h6, p{
 	margin: 0;	
 }
 .main{
+	width: 100%;
+	margin: 0 auto;
 	color: #fff;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -30,11 +32,11 @@ h1, h2, h3, h4, h5, h6, p{
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	height:100vh;
 	min-height: 600px;
 	background: url('../img/bg.jpg') no-repeat center;
 	background-size: cover;
 	position: relative;
+	background-attachment: fixed;
 }
 .main-overlay{
 	position: absolute;
@@ -60,10 +62,9 @@ h1, h2, h3, h4, h5, h6, p{
 	-ms-align-items: center;
 	align-items: center;
 	width: 100%;
-	height: 7vh;
-	position: relative;
 	z-index: 2;
 	background: #392742;
+	position: fixed;
 }
 
 .menu{
@@ -97,7 +98,7 @@ h1, h2, h3, h4, h5, h6, p{
 	display: flex;
 	flex-direction: column;
 	position: relative;
-	z-index: 2;
+	z-index: 0;
 	text-align: center;
 	margin-top: 300px;
 
@@ -121,6 +122,7 @@ h1, h2, h3, h4, h5, h6, p{
 	align-items: center;
 	justify-content: center;
 	height: 15vh;
+	z-index: 0;
 }
 .arrow-down{
 	z-index: 2;
@@ -141,7 +143,8 @@ h1, h2, h3, h4, h5, h6, p{
 
 .cont{
 	/*border: 1px solid black;*/
-
+	width: 100%;
+	margin: 0 auto;
 	padding: 0;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -251,7 +254,7 @@ h1, h2, h3, h4, h5, h6, p{
 section{
 	background-color: #392742;
 	margin: 0 auto;
-	width: 100%;
+	max-width: 1140px;
 	color: white;
 }
 .footer2{
