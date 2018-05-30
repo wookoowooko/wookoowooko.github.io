@@ -171,6 +171,9 @@ h1, h2, h3, h4, h5, h6, p{
 	text-decoration: none;
 	color: #fff;
 }
+input[type=checkbox] {
+display: none;
+}
 /*меню*/
 /*меню*/
 /*меню*/
@@ -435,13 +438,21 @@ section{
 	color: white;
 	text-decoration: none;
 	background-color: #ffffas;
+}
+label{
+	display: none;
 }	
 button{
 	background-color:black;
 	border-radius: 20px;
 }
+@media screen and (max-width: 1019px){
+	.menu ul li a{
+		white-space: nowrap;
+	}
+}	
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 910px){
 	.footer-contain{
 	flex: 1 1 100%; 
 	min-height: 50px;
@@ -454,8 +465,10 @@ button{
 		width: 100%;
 	}
 	.menu ul li{
-	font-size: 8px;
+		font-size: 8px;
 	}
+	.menu ul li a{
+		white-space: nowrap;	
 }
 @media screen and (max-width: 416px){
 	.footer-contain{
@@ -489,11 +502,45 @@ button{
 		font-size: 14px;
 		flex-direction: column;
 	}
-		.menu ul li a{
+	.menu ul li a{
 		text-align: center;
+		padding: 0;
 	}
 	.menu ul li a:hover{
 		background-color: #de7b5c;;
 		border-radius: 4px;
+
 	}
+	.menu {
+		display: none;
+	}
+	input[type=checkbox] {
+   		 display: none;
+	}
+	label {
+		margin-right: -30px;
+    	display: flex;
+    	-ms-align-self: start;
+    	align-self: start;
+	    background: #de7b5c;
+	    padding: 5px;
+	    border: 1px solid rgba(0,0,0,.1);
+	    border-radius: 2px;
+	    color: white;
+	    font-weight: bold;
+	}
+	input[type=checkbox]:checked ~ .menu {
+		display: block;
+		transition-duration: 2s;
+	}
+	input[type=checkbox]:checked ~ .logo {
+    	-ms-align-self: start;
+    	align-self: start;
+	}
+	.logo{
+		display: flex;
+    	-ms-align-self: center;
+    	align-self: center;
+	}
+
 }
