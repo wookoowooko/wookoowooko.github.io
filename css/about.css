@@ -517,11 +517,13 @@ button{
 	input[type=checkbox] {
    		 display: none;
 	}
-	label {
-		margin-right: -30px;
+ 	label {
+ 		margin-top: -22px;
+ 		margin-right: -270px;
+ 		cursor: pointer;
     	display: flex;
-    	-ms-align-self: start;
-    	align-self: start;
+    	-ms-align-items: center;
+    	align-items: center;
 	    background: #de7b5c;
 	    padding: 5px;
 	    border: 1px solid rgba(0,0,0,.1);
@@ -531,16 +533,21 @@ button{
 	}
 	input[type=checkbox]:checked ~ .menu {
 		display: block;
-		transition-duration: 2s;
 	}
 	input[type=checkbox]:checked ~ .logo {
     	-ms-align-self: start;
     	align-self: start;
 	}
 	.logo{
+		margin-top: 5px;
+		margin-right: 180px;
 		display: flex;
     	-ms-align-self: center;
     	align-self: center;
+    	justify-content: baseline;
 	}
+	.header{
+		flex-direction: column;
 
+	}
 }
