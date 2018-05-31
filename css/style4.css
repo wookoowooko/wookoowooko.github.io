@@ -530,7 +530,7 @@ label{
 	.footer-contain{
 	flex: 1 1 100%; 
 	min-height: 50px;
-	margin : 0;
+	margin-bottom: 2px;
 	}
 	.card:last-child{
 		margin-bottom: 0px;
@@ -604,6 +604,10 @@ label{
 	}
 	.header{
 		flex-direction: column;
-
+	}
+	.norm{
+		opacity: 1;
+		padding: 8px;
+		font-size: 20px;
 	}
 }
