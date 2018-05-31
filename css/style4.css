@@ -1,3 +1,4 @@
+@import "http://fonts.fontstorage.com/import/merriweather.css";
 *, *:before, *:after{
 	box-sizing: border-box;
 }
@@ -5,13 +6,16 @@ img{
 	max-width: 100%;
 }
 *{
+	margin: 0;
+	padding: 0px;
 	transition-property: all;
 	transition-duration: 0.2s;
 	transition-timing-function: linear;
 }	
 body{
-	font-family: 'Bad Script', cursive;
-	font-family: 'Pacifico', cursive;
+	font-family: 'Merriweather';
+	/*font-family: 'Bad Script', cursive;*/
+	/*font-family: 'Pacifico', cursive;*/
 	margin: 0;
 	width: 100%;
 }
@@ -101,7 +105,7 @@ display: none;
 /*меню*/
 .header	{
 	padding: 5px;
-	font-family: 'Comfortaa', cursive;
+	/*font-family: 'Comfortaa', cursive;*/
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -255,6 +259,105 @@ display: none;
 	align-items: center;
 }
 
+/*					инфа о  молли			*/
+/*					инфа о  молли			*/
+/*					инфа о  молли			*/
+/*					инфа о  молли			*/
+/*					инфа о  молли			*/
+
+.info{
+	/*font-family: 'Comfortaa', cursive;*/
+	background-color: #fff;
+	min-height: 700px;
+	/*высота всего контейнера с фото-работами*/
+	margin: 50px auto 0 auto;
+	width: 90%;
+	color: #000;
+	border: 1px solid blue;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.info-cont{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.i1{
+	border: 1px solid green;
+	width: 70%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	-ms-align-items: center;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+.tmolly{
+	height: 15%;
+	text-align: right;
+	border:1px solid red;
+	width: 100%;
+	margin: 0 auto 0 auto;
+}
+.itext{
+	height: 70%;
+	border: 1px solid black;
+	width: 100%;
+	font-style: bold;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	padding-left: 50px;
+}
+.itext h1{
+	padding-bottom: 70px;
+}
+.itext p{
+	font-size: 16pt;
+	padding-bottom: 30px;
+}
+.but{
+	height: 15%;
+	border: 1px solid black;
+	width: 100%;
+}
+.ibut{
+	border: 1px solid orange;
+	background-color: #392742;
+	padding: 10px;
+	border-radius: 15px;
+	color: #fff;
+	min-width: 100px;
+	max-width: 10%;
+	white-space: nowrap;
+	text-align: center;
+	margin-top: -50px;
+}
+.i2{
+	width: 30%;
+}
+
+/*					инфа о  молли			*/
+/*					инфа о  молли			*/
+/*					инфа о  молли			*/
+/*					инфа о  молли			*/
+/*					инфа о  молли			*/
+
+
+
 .footer{
 	background-color: #f0f0f0;
 	min-height: 1200px;/*высота всего контейнера с фото-работами*/
@@ -281,7 +384,7 @@ display: none;
 	text-align: center;
 	justify-content: center;
 	padding: 50px;
-	/*border: 1px solid blue;*/
+	/*border: 1px solid blue;
 	color: #392742;/*цвет блока мои работы*/
 	background: white; 
 	font-size: 24pt;
@@ -372,7 +475,7 @@ section{
 	width: 100%;
 	color: white;
 	font-size: 20px;
-	font-family: sans-serif;
+	/*font-family: sans-serif;*/
 
 }
 .footer2{
@@ -502,6 +605,31 @@ label{
 	.menu ul li a{
 		white-space: nowrap;
 	}
+	.info{
+		flex-direction: column-reverse;
+		justify-content: space-around;
+	}
+	.info-cont{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.ibut{
+		margin: 0 auto;
+	}
+	.i1{
+		justify-content: center;
+	}
+	.i2{
+		min-height: 300px;
+	}
+	.itext h1{
+		font-size: 18pt;
+	padding-bottom: 70px;
+	}
+	.itext p{
+		font-size: 12pt;
+		padding-bottom: 30px;
+	}
 }	
 
 @media screen and (max-width: 910px){
@@ -523,6 +651,22 @@ label{
 	.menu ul li a{
 		white-space: nowrap;	
 }
+
+@media screen and (max-width: 800px){
+	.itext h1{
+		font-size: 14pt;
+		padding-bottom: 50px;
+	}
+	.itext p{
+		font-size: 12pt;
+		padding-bottom: 10px;
+	}
+	.itext{
+		padding: 0;
+	}
+}
+
+
 @media screen and (max-width: 510px){
 	.main-text{
 		margin-top: 40vh;
@@ -609,5 +753,36 @@ label{
 		opacity: 1;
 		padding: 8px;
 		font-size: 20px;
+	}
+	.tmolly p{
+		font-size: 8pt;
+		text-align: center;
+		margin: 3px auto;
+	}
+	.info{
+		margin-top: 10px;
+	}
+}
+@media screen and (max-width: 320px){
+	.itext h1{
+		text-align: center;
+		font-size: 10pt;
+		padding-bottom: 10px;
+	}
+	.itext p{
+		text-align: center;
+		font-size: 8pt;
+		padding: 2px;
+		
+	}
+	.i2{
+		min-height: 300px;
+	}
+	.tmolly p{
+		font-size: 8pt;
+		text-align: center;
+	}
+	.itext{
+		padding: 0;
 	}
 }
