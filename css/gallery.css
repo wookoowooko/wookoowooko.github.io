@@ -257,7 +257,7 @@ display: none;
 
 .footer{
 	background-color: #f0f0f0;
-	min-height: 1200px;/*высота всего контейнера с фото-работами*/
+	height: 100%;/*высота всего контейнера с фото-работами*/
 	
 	width: 90%;
 	/*border: 1px solid red;*/
@@ -287,10 +287,10 @@ display: none;
 	font-size: 24pt;
 }	
 .footer-contain{
-	margin: 10px;
+	margin: 2px;
 	border-radius: 5px;
-	
-	flex: 1 1 calc(50% - 20px);
+min-height: 300px;
+	flex: 1 1 calc(25% - 20px);
 	/*border: 1px solid blue;*/
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -304,23 +304,6 @@ display: none;
 	background-size: cover;
 	box-sizing: border-box;
 	opacity: 1;
-}
-.footer-contain:nth-child(1) {
-	margin-right: 0px;
-}
-.footer-contain:nth-child(3) {
-	margin-right: 0px;
-	margin-top: 0px;
-}
-.footer-contain:nth-child(4) {
-	margin-top: 0px;
-}
-.footer-contain:nth-child(5) {
-	margin-top: 0px;
-	margin-right: 0px;
-}
-.footer-contain:nth-child(6) {
-	margin-top: 0px;
 }
 
 	
