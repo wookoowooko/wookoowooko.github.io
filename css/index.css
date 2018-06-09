@@ -56,8 +56,9 @@ h1, h2, h3, h4, h5, h6, p{
 	/*border:1px solid red;*/
 	position: fixed;
 }
-.logo span{
+.logo a{
 	font-family: 'Pacifico', cursive;
+	color:white;
 }
 .menu{
 
@@ -109,7 +110,7 @@ display: none;
 
 .podmenu ul{
 	width: auto;
-	min-width: 170px;
+	min-width: 120px;
 	position: absolute;
 	flex-direction: column;
 	/*border:1px solid red;*/
@@ -134,6 +135,9 @@ display: none;
 .vipad:hover .podmenu ul{
 	display: block;
 
+}
+.contacts-info a{
+	text-transform: none;
 }
 
 /*меню*/
@@ -223,7 +227,17 @@ display: none;
 		-1px  1px 1px #000000,
 		 1px  1px 1px #000000;
 }
-
+.begin{
+	/*border:1px solid red;*/
+	margin-bottom: 120px;
+	padding:15px 25px;
+	border-radius: 10px;
+	background-color: #de7b5c;
+	color:white;
+}
+.begin:hover{
+	background-color: #392742;
+}
 /*							CENTER							*/
 /*							CENTER							*/
 /*							CENTER							*/
@@ -344,6 +358,12 @@ display: none;
 	margin-top: -50px;
 	margin-left: 50px;
 }
+
+
+.ibut:hover{
+	background-color: #de7b5c;
+}
+
 .ibut a{
 	text-decoration:none;
 	color:white;
@@ -510,8 +530,23 @@ section{
 	justify-content: center;
 
 }
+.molle{
+	font-family: 'Pacifico', cursive;
+	padding: 3px;
+	border-radius: 10px;
+}
+.molle:hover{
+	background-color: #de7b5c; 
+}
 .footersocialitem a{
 	color: white;
+	padding-right: 30px;
+}
+.footersocialitem a:hover{
+	color: #de7b5c;
+}
+.footersocialitem a:last-child{
+	padding-right: 0;
 }
 
 
@@ -641,8 +676,9 @@ label{
 	.footer-contain{
 	flex: 1 1 100%; 
 	min-height: 50px;
-	margin : 0;
+	margin-bottom: 5px;
 	}
+
 	.card:last-child{
 		margin-bottom: 0px;
 	}
@@ -653,7 +689,8 @@ label{
 		font-size: 8px;
 	}
 	.menu ul li a{
-		white-space: nowrap;	
+		white-space: nowrap;}
+
 }
 
 @media screen and (max-width: 800px){
@@ -668,6 +705,10 @@ label{
 	.itext{
 		padding: 0;
 	}
+	.podmenu ul{
+		min-width: 70px;
+	}
+
 }
 
 
@@ -723,7 +764,7 @@ label{
 	}
  	label {
  		margin-top: -22px;
- 		margin-right: -270px;
+ 		margin-right: 270px;
  		cursor: pointer;
     	display: flex;
     	-ms-align-items: center;
@@ -744,7 +785,7 @@ label{
 	}
 	.logo{
 		margin-top: 5px;
-		margin-right: 180px;
+		margin-right: -180px;
 		display: flex;
     	-ms-align-self: center;
     	align-self: center;
@@ -787,6 +828,9 @@ label{
 		-ms-align-items: center;
 		align-items: center;
 		justify-content: center;
+	}
+	.menu-link-2{
+		display: none;
 	}
 	.podmenu ul li{
 		display: -webkit-flex;
