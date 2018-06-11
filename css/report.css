@@ -647,8 +647,55 @@ label{
 	font-size: 8pt; 
 }
 
-
-
+/*		about-report			*/
+/*		about-report			*/
+/*		about-report			*/
+/*		about-report			*/
+/*		about-report			*/
+/*		about-report			*/
+.about-report{
+	background-color: white;
+	/*border:1px solid red;*/
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.both{
+	margin-top: 100px;
+	background-color: white;
+	width: 75%;
+	/*border:1px solid green;*/
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.both-item{
+	/*border: 1px solid blue;*/
+	background-color: white;
+	width: 50%;
+	color:black;
+}
+.myworks{
+	text-align: center;
+	width: auto;
+	margin: 0 auto;
+	/*border: 1px solid green;*/
+	background-color: #fff;
+	color:#000;
+}
+.myworks h2{
+	margin-top: 250px;
+	margin-bottom: 10%;
+}
+.text p{
+	padding-top: 40px;
+	padding-right: 35px;
+	font-size: 20px;
+}
 
 
 

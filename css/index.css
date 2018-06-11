@@ -165,7 +165,7 @@ display: none;
 	justify-content: space-between;
 	align-items: center;
 	height: 100vh;/*высота блока хедер*/
-	background: url('../img/beg.jpg') no-repeat center;
+	background: url('../img/bg.jpg') no-repeat center;
 	background-size: cover;
 	position: relative;
 	background-attachment: fixed;
@@ -188,7 +188,7 @@ display: none;
 }
 .main-text p{
 	margin-top: 10vh;
-	font-size: 24px;
+	font-size: 34px;
 	text-shadow: 
 		-0   -1px 1px #000000,
 		 0   -1px 1px #000000,
@@ -208,35 +208,44 @@ display: none;
 		 1px  1px 1px #000000;
 }
 .main-text h1{
-	font-size: 80px;
+
+	font-size: 100px;
 	text-shadow: 
-		-0   -1px 1px #000000,
-		 0   -1px 1px #000000,
-		-0    1px 1px #000000,
-		 0    1px 1px #000000,
-		-1px -0   1px #000000,
-		 1px -0   1px #000000,
-		-1px  0   1px #000000,
-		 1px  0   1px #000000,
-		-1px -1px 1px #000000,
-		 1px -1px 1px #000000,
-		-1px  1px 1px #000000,
-		 1px  1px 1px #000000,
-		-1px -1px 1px #000000,
-		 1px -1px 1px #000000,
-		-1px  1px 1px #000000,
-		 1px  1px 1px #000000;
+		-0   -2px 2px #000000,
+		 0   -2px 2px #000000,
+		-0    2px 2px #000000,
+		 0    2px 2px #000000,
+		-2px -0   2px #000000,
+		 2px -0   2px #000000,
+		-2px  0   2px #000000,
+		 2px  0   2px #000000,
+		-1px -2px 2px #000000,
+		 1px -2px 2px #000000,
+		-1px  2px 2px #000000,
+		 1px  2px 2px #000000,
+		-2px -1px 2px #000000,
+		 2px -1px 2px #000000,
+		-2px  1px 2px #000000,
+		 2px  1px 2px #000000,
+		-2px -2px 2px #000000,
+		 2px -2px 2px #000000,
+		-2px  2px 2px #000000,
+		 2px  2px 2px #000000,
+		-2px -2px 2px #000000,
+		 2px -2px 2px #000000,
+		-2px  2px 2px #000000,
+		 2px  2px 2px #000000;
 }
 .begin{
 	/*border:1px solid red;*/
 	margin-bottom: 120px;
-	padding:15px 25px;
-	border-radius: 10px;
-	background-color: #de7b5c;
+	padding:10px 25px;
+	border-radius: 30px;
+	background-color: #392742;
 	color:white;
 }
 .begin:hover{
-	background-color: #392742;
+	background-color: #de7b5c;
 }
 /*							CENTER							*/
 /*							CENTER							*/
@@ -339,6 +348,9 @@ display: none;
 .itext p{
 	font-size: 16pt;
 	padding-bottom: 30px;
+}
+.meetme{
+	margin-top: 70px;
 }
 .but{
 	height: 15%;
