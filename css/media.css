@@ -249,4 +249,14 @@
 	.begin{
 		display: none;
 	}
+	.menu {
+		width: 100%;
+		height: 100vh;
+	}
+	.menu ul li{
+		padding-bottom: 10px;
+	}
+	.menu ul {
+		margin-top: 10px;
+	}
 }
