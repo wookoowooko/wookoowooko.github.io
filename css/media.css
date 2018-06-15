@@ -85,7 +85,7 @@
 		margin-top: 40vh;
 	}
 	.main{
-		height: 40vh;
+		height: auto;
 	}
 	.main-text p{
 		margin-top: 10px;
@@ -244,6 +244,7 @@
 	}
 	.main-text p{
 		font-size: 30px;
+		padding-bottom: 50px;
 	}
 	.begin{
 		display: none;
