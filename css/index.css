@@ -724,13 +724,28 @@ label{
 }
 
 
-@media screen and (max-width: 510px){
+@media screen and (max-width: 460px){
 	.main-text{
 		margin-top: 40vh;
+	}
+	.main{
+		height: 40vh;
+	}
+	.main-text p{
+		margin-top: 10px;
+
+	}
+	.itext h1{
+		padding-bottom: 5px;
+	}
+	.meetme{
+		margin-top: 10px;
 	}
 	.footer-contain{
 	flex: 1 1 100%; 
 	min-height: 50px;
+	margin: 0;
+	padding: 0;
 	margin-bottom: 2px;
 	}
 	.card:last-child{
@@ -815,6 +830,7 @@ label{
 		font-size: 8pt;
 		text-align: center;
 		margin: 3px auto;
+		margin-top: -50px;
 	}
 	.info{
 		margin-top: 10px;
@@ -863,27 +879,10 @@ label{
 		align-self: center;
 
 	}
-}
-@media screen and (max-width: 320px){
-	.itext h1{
-		text-align: center;
-		font-size: 10pt;
-		padding-bottom: 10px;
+	.main-text{
+		margin-top: 60px;
 	}
-	.itext p{
-		text-align: center;
-		font-size: 8pt;
-		padding: 2px;
-		
-	}
-	.i2{
-		min-height: 300px;
-	}
-	.tmolly p{
-		font-size: 8pt;
-		text-align: center;
-	}
-	.itext{
-		padding: 0;
+	.begin{
+		display: none;
 	}
 }
