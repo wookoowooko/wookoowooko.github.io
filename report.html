@@ -14,6 +14,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/report.css">
+	<link rel="stylesheet" href="src/css/swipebox.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
@@ -104,28 +105,28 @@
    
     <ul class="img-list">
       <li class="footer-contain">
-        <a href="img/rep/rep1.jpg"><img src="img/rep/rep1-min.png"></a>
+        <a href="img/rep/rep1.jpg" class="swipebox"><img src="img/rep/rep1-min.png"></a>
       </li>
       <li class="footer-contain">
-         <a href="img/rep/rep2.jpg"><img src="img/rep/rep2-min.png"></a>
+         <a href="img/rep/rep2.jpg" class="swipebox"><img src="img/rep/rep2-min.png"></a>
       </li>
        <li class="footer-contain">
-        <a href="img/rep/rep3.jpg"><img src="img/rep/rep3-min.png"></a>
+        <a href="img/rep/rep3.jpg" class="swipebox"><img src="img/rep/rep3-min.png"></a>
       </li>
       <li class="footer-contain">
-         <a href="img/rep/rep4.jpg"><img src="img/rep/rep4-min.png"></a>
+         <a href="img/rep/rep4.jpg" class="swipebox"><img src="img/rep/rep4-min.png"></a>
       </li>
        <li class="footer-contain">
-        <a href="img/rep/rep5.jpg"><img src="img/rep/rep5-min.png"></a>
+        <a href="img/rep/rep5.jpg" class="swipebox"><img src="img/rep/rep5-min.png"></a>
       </li>
       <li class="footer-contain">
-         <a href="img/rep/rep6.jpg"><img src="img/rep/rep6-min.png"></a>
+         <a href="img/rep/rep6.jpg" class="swipebox"><img src="img/rep/rep6-min.png"></a>
       </li>
        <li class="footer-contain">
-        <a href="img/rep/rep7.jpg"><img src="img/rep/rep7-min.png"></a>
+        <a href="img/rep/rep7.jpg" class="swipebox"><img src="img/rep/rep7-min.png"></a>
       </li>
       <li class="footer-contain">
-         <a href="img/rep/rep8.jpg"><img src="img/rep/rep8-min.png"></a>
+         <a href="img/rep/rep8.jpg" class="swipebox"><img src="img/rep/rep8-min.png"></a>
       </li>
  
       
@@ -160,10 +161,14 @@
 		</div>
 		<span = class="copy">Cайт создан командой "Garry team"</span>
 	</section>
+	<script src="lib/jquery-2.1.0.min.js"></script>
+	<script src="src/js/jquery.swipebox.js"></script>
+	<script type="text/javascript">
+		;( function( $ ) {
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			$( '.swipebox' ).swipebox();
 
-	<script type="text/javascript" src="functions.js"></script>
-
+		} )( jQuery );
+	</script>
 </body>
 </html>

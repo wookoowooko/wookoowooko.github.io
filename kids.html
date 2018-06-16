@@ -14,6 +14,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/kids.css">
+	<link rel="stylesheet" href="src/css/swipebox.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
@@ -103,28 +104,28 @@
    
     <ul class="img-list">
       <li class="footer-contain">
-        <a href="img/kids/kid.jpg"><img src="img/kids/kid.png"></a>
+        <a href="img/kids/kid.jpg" class="swipebox"><img src="img/kids/kid.png"></a>
       </li>
       <li class="footer-contain">
-        <a href="img/kids/kid2.jpg"><img src="img/kids/kid2.png"></a>
+        <a href="img/kids/kid2.jpg" class="swipebox"><img src="img/kids/kid2.png"></a>
       </li>
       <li class="footer-contain">
-        <a href="img/kids/kid3.jpg"><img src="img/kids/kid3.png"></a>
+        <a href="img/kids/kid3.jpg" class="swipebox"><img src="img/kids/kid3.png"></a>
       </li>
       <li class="footer-contain">
-        <a href="img/kids/kid4.jpg"><img src="img/kids/kid4.png"></a>
+        <a href="img/kids/kid4.jpg" class="swipebox"><img src="img/kids/kid4.png"></a>
       </li>
       <li class="footer-contain">
-        <a href="img/kids/kid5.jpg"><img src="img/kids/kid5.png"></a>
+        <a href="img/kids/kid5.jpg" class="swipebox"><img src="img/kids/kid5.png"></a>
       </li>
       <li class="footer-contain">
-        <a href="img/kids/kid6.jpg"><img src="img/kids/kid6.png"></a>
+        <a href="img/kids/kid6.jpg" class="swipebox"><img src="img/kids/kid6.png"></a>
       </li>
   	  <li class="footer-contain">
-        <a href="img/kids/kid7.jpg"><img src="img/kids/kid7.png"></a>
+        <a href="img/kids/kid7.jpg" class="swipebox"><img src="img/kids/kid7.png"></a>
       </li>
        <li class="footer-contain">
-        <a href="img/kids/kid8.jpg"><img src="img/kids/kid8.png"></a>
+        <a href="img/kids/kid8.jpg" class="swipebox"><img src="img/kids/kid8.png"></a>
       </li>		
        
     </ul>
@@ -158,9 +159,14 @@
 		</div>
 		<span = class="copy">Cайт создан командой "Garry team"</span>
 	</section>
+	<script src="lib/jquery-2.1.0.min.js"></script>
+	<script src="src/js/jquery.swipebox.js"></script>
+	<script type="text/javascript">
+		;( function( $ ) {
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			$( '.swipebox' ).swipebox();
 
-	<script type="text/javascript" src="functions.js"></script>
+		} )( jQuery );
+	</script>
 </body>
 </html>
