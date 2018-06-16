@@ -12,6 +12,9 @@
 	.menu ul li a{
 		white-space: nowrap;
 	}
+	.main{
+		height: auto;
+	}
 	.main-text{
 		margin-top: 120px;
 	}
@@ -20,6 +23,7 @@
 		margin: 0 auto;
 	}
 	.begin{
+		margin-top: 20px;
 		margin-bottom: 200px;
 	}
 	.both{
