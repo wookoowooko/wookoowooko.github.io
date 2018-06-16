@@ -259,4 +259,27 @@
 	.menu ul {
 		margin-top: 10px;
 	}
+
+	.both{
+		width: 100%;
+	margin: 0 auto;	
+	flex-direction: column-reverse;
+	}
+	.both-item{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.copy2 h3{
+		font-size: 25px;
+	}
+	.text p{
+		font-size:16px;
+		padding: 0;
+	}
+	.myworks h2{
+		margin: 15px;
+	}
+	.footer2{
+		margin-top: 10px;
+	}
 }
