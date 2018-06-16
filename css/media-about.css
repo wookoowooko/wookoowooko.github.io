@@ -24,19 +24,17 @@
 		margin: 0 auto;
 	}
 	.i1{
+		flex-direction: column-reverse;
 		justify-content: center;
 	}
 	.i2{
 		min-height: 300px;
 	}
 	.itext h1{
+		text-align:center;
 		font-size: 18pt;
-	padding-bottom: 70px;
 	}
-	.itext p{
-		font-size: 12pt;
-		padding-bottom: 30px;
-	}
+	
 }	
 
 @media screen and (max-width: 910px){
@@ -93,6 +91,7 @@
 	}
 	.itext h1{
 		padding-bottom: 5px;
+		margin-bottom: 0;
 	}
 	.meetme{
 		margin-top: 10px;
@@ -283,6 +282,29 @@
 		margin-top: 10px;
 	}
 	.i2{
+		margin:auto;
 		margin-top: 15%;
+	}
+	.itext h2{
+		font-size: 12pt;
+	}
+	.itext p{
+		font-size: 12pt;
+		padding-bottom: 10px;
+	}
+	.i2 img{
+		margin: 0 auto;
+		max-height: 400px;
+	}
+	.cont h3{
+		text-align:center;
+		font-size: 18px;
+	}
+	.footer-contain img{
+		width: 50px;
+
+	}
+	.footer{
+		margin-bottom: 5px;
 	}
 }
