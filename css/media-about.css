@@ -8,11 +8,38 @@
 /*						адаптация				*/
 /*						адаптация				*/
 
-@media screen and (max-width: 1019px){
+@media screen and (max-width: 1280px){
 	.menu ul li a{
 		white-space: nowrap;
 	}
+	.main{
+		height: auto;
+	}
+	.main-text{
+		margin-top: 120px;
+	}
+	.text{
+		width: 90%;
+		margin: 0 auto;
+	}
+	.begin{
+		margin-top: 20px;
+		margin-bottom: 200px;
+	}
+	.both{
+		width: 90%;
+		flex-direction: column-reverse;
+		margin-top: 0;
+	}
+	.myworks h2{
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.both p{
+		padding-top : 0;
+	}
 	.info{
+		margin: 0 auto;
 		flex-direction: column-reverse;
 		justify-content: space-around;
 	}
@@ -28,54 +55,43 @@
 		justify-content: center;
 	}
 	.i2{
+		margin-top: 7%;
 		min-height: 300px;
+	}
+	.i2 img{
+		width: 100%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
 	}
 	.itext h1{
 		text-align:center;
 		font-size: 18pt;
 	}
-	
-}	
-
-@media screen and (max-width: 910px){
-
-	.footer-contain{
-	flex: 1 1 100%; 
-	min-height: 50px;
-	margin-bottom: 5px;
-	}
-
-	.card:last-child{
-		margin-bottom: 0px;
-	}
-	.footer2-container{
-		width: 100%;
-	}
-	.menu ul li{
-		font-size: 8px;
-	}
-	.menu ul li a{
-		white-space: nowrap;}
-
-}
-
-@media screen and (max-width: 800px){
-	.itext h1{
+	.itext h2{
+		text-align:center;
 		font-size: 14pt;
-		padding-bottom: 50px;
+		margin-bottom: 10px;
 	}
 	.itext p{
 		font-size: 12pt;
-		padding-bottom: 10px;
+		padding-bottom: 30px;
 	}
-	.itext{
+	.itext p b{
+		font-size: 18pt;
+		padding-bottom: 30px;
+	}
+	.meetme{
+		margin: 0;
 		padding: 0;
 	}
-	.podmenu ul{
-		min-width: 70px;
-	}
 
-}
+}	
+
+
 
 
 @media screen and (max-width: 460px){
@@ -91,7 +107,6 @@
 	}
 	.itext h1{
 		padding-bottom: 5px;
-		margin-bottom: 0;
 	}
 	.meetme{
 		margin-top: 10px;
@@ -282,29 +297,9 @@
 		margin-top: 10px;
 	}
 	.i2{
-		margin:auto;
 		margin-top: 15%;
-	}
-	.itext h2{
-		font-size: 12pt;
-	}
-	.itext p{
-		font-size: 12pt;
-		padding-bottom: 10px;
 	}
 	.i2 img{
 		margin: 0 auto;
-		max-height: 400px;
-	}
-	.cont h3{
-		text-align:center;
-		font-size: 18px;
-	}
-	.footer-contain img{
-		width: 50px;
-
-	}
-	.footer{
-		margin-bottom: 5px;
 	}
 }
