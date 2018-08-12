@@ -198,7 +198,9 @@ display: none;
 	justify-content: center;
 	align-items: center;
 }
-
+.cont h3{
+	text-align: center;
+}
 /*					инфа о  молли			*/
 /*					инфа о  молли			*/
 /*					инфа о  молли			*/
@@ -264,7 +266,7 @@ display: none;
 	display: flex;
 	flex-direction: column;
 	justify-content: start;
-	padding-left: 50px;
+
 }
 
 .itext p{
